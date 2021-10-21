@@ -1,0 +1,22 @@
+.signUp {
+  margin-top: 100px;
+  background-repeat: none;
+  background-size: cover;
+  height: 90vh;
+
+  &__form {
+    margin-top: 50px;
+
+  }
+  &__page {
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/023/696/835/large/zue-breton-decor-prairie-pour-monstre-contreplongee-05.jpg?1580067520');
+    margin: 20px auto;
+    height: 70vh;
+    width: 400px;
+    font-size: 20px;
+
+  }
+  &__content {
+    text-align: -webkit-center
+  }
+}

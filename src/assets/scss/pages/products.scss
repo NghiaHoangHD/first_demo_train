@@ -1,0 +1,12 @@
+.products {
+  text-align: -webkit-center;
+  // margin-top:100px;
+
+  display: flex;
+  margin: 100px 224px;
+  &__item {
+    margin: 0 20px;
+    text-align: center;
+    justify-content: space-between;
+  }
+}

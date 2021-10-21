@@ -1,0 +1,109 @@
+.topbar {
+  display: flex;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-family: 'Courier New', Courier, monospace;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 9; }
+  .topbar__logo {
+    color: aqua;
+    flex: 1;
+    margin-left: 20px; }
+    .topbar__logo__link {
+      font-size: 34px; }
+      .topbar__logo__link:hover {
+        text-decoration: none;
+        color: #4b63e9; }
+  .topbar__left {
+    flex: 2;
+    padding-left: -8px;
+    align-self: center; }
+    .topbar__left__list {
+      list-style: none;
+      display: flex; }
+    .topbar__left__item {
+      margin: 0px 20px; }
+    .topbar__left__link {
+      color: #929292;
+      text-decoration: none;
+      font-size: 20px; }
+      .topbar__left__link:hover {
+        color: #43be6c; }
+  .topbar__right {
+    flex: 1; }
+    .topbar__right__list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .topbar__right__link {
+      color: #929292;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 20px; }
+      .topbar__right__link:hover {
+        color: #43be6c; }
+
+.topbar__right___item__img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px; }
+
+.header {
+  text-align: -webkit-center;
+  margin-top: 60px; }
+  .header__img {
+    display: flex;
+    width: 1400px;
+    height: 650px;
+    text-align: center;
+    justify-content: space-between; }
+  .header__content {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #444;
+    position: absolute;
+    right: 36%;
+    top: 30%; }
+  .header__title {
+    font-size: 50px;
+    color: white; }
+  .header__description {
+    color: white; }
+  .header__button {
+    padding: 10px;
+    width: 180px;
+    height: 44px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    outline: none; }
+    .header__button:hover {
+      background-color: black;
+      color: white;
+      transition: 200ms ease-in;
+      outline: none;
+      border: none; }
+  .header__slogan {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2D2D2E;
+    width: 100%;
+    height: 60px;
+    color: white;
+    width: 1400px;
+    font-weight: 600;
+    align-items: center; }
+
+h1 {
+  margin: 0; }

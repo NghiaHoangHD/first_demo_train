@@ -1,0 +1,54 @@
+@import '../scss/mixin/mixin.scss';
+
+.footer {
+  background-color: rgb(235, 235, 235);
+  margin-top: 100px;
+  padding: 20px 30px;
+}
+
+.footer-img{
+  transition-duration: 1s ease;
+  opacity: 0.7;
+ border-radius: 10px;
+ cursor: pointer;
+ width: 200px;
+ height: 100px;
+ background-size: cover;
+}
+
+.footer-img:hover {
+  transform: scale(1.09);
+  transition-duration: 1s ;
+  opacity: 1;
+}
+
+.aboutFooter {
+  height: 200px;
+}
+
+.Email {
+  display: block;
+}
+
+.inputEmail {
+  display: block;
+  margin: 10px 0;
+  width: 300px;
+  height: 30px;
+}
+
+.titleFooter {
+  font-size: 24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  word-spacing: 10px;
+  /* margin-bottom: 20px; */
+}
+
+.footer__img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__btn {
+  @include button(rgba(98, 101, 255, 0.867), white)
+}

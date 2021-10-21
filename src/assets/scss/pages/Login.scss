@@ -1,0 +1,22 @@
+.login {
+  margin-top: 100px;
+  background-repeat: none;
+  background-size: cover;
+  height: 90vh;
+
+  &__form {
+    margin-top: 50px;
+
+  }
+  &__page {
+    background-image: url('https://i.pinimg.com/736x/0f/ed/e3/0fede32a0b9d4e37bbf4f1cbc168c5da.jpg');
+    margin: 20px auto;
+    height: 70vh;
+    width: 400px;
+    font-size: 20px;
+
+  }
+  &__content {
+    text-align: -webkit-center
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "user": [
+    {
+      "id" : 1,
+      "email": "nghiahoang@gmail.com",
+      "username": "nghiahoang",
+      "password": "123456",
+      "createdAt": 12012021,
+      "updatedAt": 12022021
+    },
+    {
+      "id" : 2,
+      "email": "hieuHoang@gmail.com",
+      "username": "hieuhoang",
+      "password": "123456",
+      "createdAt": 12012021,
+      "updatedAt": 12022021
+    },
+    {
+      "id" : 3,
+      "email": "duchoang@gmail.com",
+      "username": "duchoang",
+      "password": "123456",
+      "createdAt": 12012021,
+      "updatedAt": 12022021
+    },
+    {
+      "id" : 4,
+      "email": "huongle@gmail.com",
+      "username": "huongle",
+      "password": "123456",
+      "createdAt": 12012021,
+      "updatedAt": 12022021
+    }
+
+  ],
+  "categories": [
+    { "id": 1,
+      "name": "ao jacket",
+      "createdAt": 12012021,
+      "updatedAt": 12022021
+
+    }
+  ],
+  "products": [
+    { "id": 1,
+      "name": "Jacket",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/affordableonline-1594998657.jpg?crop=0.502xw:1.00xh;0.251xw,0&resize=640:*",
+      "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "createdAt": 1,
+      "updatedAt": 12012021,
+      "categoryId": 12022021,
+      "salePrice": 150000
+    },
+    { "id": 2,
+      "name": "T-Shirt",
+      "image": "https://oldnavy.gap.com/Asset_Archive/ONWeb/content/0027/312/779/assets/210903_92-M4060_M_DP_NewArrivals.jpg",
+      "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "createdAt": 1,
+      "updatedAt": 12012021,
+      "categoryId": 12022021,
+      "salePrice": 150000
+    },
+    { "id": 3,
+      "name": "Shirt",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSR4NT-4Qi89xusQZjQT7B0yq9ADoSWdXGZzq6gTjhoOhcJMSwSZvbJgmCDtnze3e_V_w&usqp=CAU",
+      "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "createdAt": 1,
+      "updatedAt": 12012021,
+      "categoryId": 12022021,
+      "salePrice": 150000
+    },
+    { "id": 4,
+      "name": "Vest",
+      "image": "https://image.made-in-china.com/202f0j00kKmQCcUWCogu/OEM-Latest-Fashion-Khaki-Cotton-Casual-Man-Work-Jacket.jpg",
+      "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "createdAt": 1,
+      "updatedAt": 12012021,
+      "categoryId": 12022021,
+      "salePrice": 150000
+    },
+    { "id": 5,
+      "name": "jacket",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/affordableonline-1594998657.jpg?crop=0.502xw:1.00xh;0.251xw,0&resize=640:*",
+      "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "createdAt": 1,
+      "updatedAt": 12012021,
+      "categoryId": 12022021,
+      "salePrice": 150000
+    },
+    { "id": 6,
+      "name": "Hoodie",
+      "image": "https://oldnavy.gap.com/Asset_Archive/ONWeb/content/0027/312/779/assets/210903_92-M4060_M_DP_NewArrivals.jpg",
+      "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "createdAt": 1,
+      "updatedAt": 12012021,
+      "categoryId": 12022021,
+      "salePrice": 150000
+    },
+    { "id": 7,
+      "name": "Jacket",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSR4NT-4Qi89xusQZjQT7B0yq9ADoSWdXGZzq6gTjhoOhcJMSwSZvbJgmCDtnze3e_V_w&usqp=CAU",
+      "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "createdAt": 1,
+      "updatedAt": 12012021,
+      "categoryId": 12022021,
+      "salePrice": 150000
+    },
+    { "id": 8,
+      "name": "Shirt",
+      "image": "https://image.made-in-china.com/202f0j00kKmQCcUWCogu/OEM-Latest-Fashion-Khaki-Cotton-Casual-Man-Work-Jacket.jpg",
+      "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "createdAt": 1,
+      "updatedAt": 12012021,
+      "categoryId": 12022021,
+      "salePrice": 150000
+    }
+
+  ],
+  "profile": { "name": "typicode" }
+}
