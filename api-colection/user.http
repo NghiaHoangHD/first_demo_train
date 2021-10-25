@@ -1,0 +1,17 @@
+@baseUrl = http://localhost:3000
+
+# User
+
+# @user getAllUser
+GET {{baseUrl}}/user
+
+###
+# @user getUserById
+GET {{baseUrl}}/user?id=1
+
+###
+# @user updateUser
+PATCH {{baseUrl}}/user?id=1
+###
+# @user deleteUserById
+DELETE {{baseUrl}}/user?id=1

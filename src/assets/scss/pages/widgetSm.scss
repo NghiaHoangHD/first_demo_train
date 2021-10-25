@@ -1,0 +1,71 @@
+.widgetSm {
+    flex: 1;
+    -webkit-box-shadow: 3px 2px 7px 0px #757575; 
+    box-shadow: 3px 2px 7px 0px #757575;
+    margin: 10px 10px 10px 25px;
+    padding: 20px
+}
+
+.widgetSmTitle {
+    margin-bottom: 20px;
+}
+
+.widgetSmInfoStaff {
+
+}
+
+.widgetSmInfoList {
+    list-style: none;
+    
+
+}
+
+.widgetSmInfoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.widgetSmAvatar {
+    width:36px;
+    height:36px;
+    border-radius: 50%;
+    
+}
+
+.widgetSmInfoWorkOfStaff {
+    display: flex;
+    flex-direction: column;
+}
+
+.widgetSmInfoName {
+    /* margin-bottom: 10px; */
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.widgetSmInfoPosition {
+    font-style: 20px;
+    color: #555;
+}
+
+.widgetSmInfoDisplay {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    outline-style: none;
+    border: none;
+    background-color: rgb(232, 235, 250);
+    cursor: pointer;
+    height: 36px;
+    border-radius:10px;
+    width: 100px;
+}
+
+.widgetSmIconDisplay {
+    margin-right: 10px;
+
+}

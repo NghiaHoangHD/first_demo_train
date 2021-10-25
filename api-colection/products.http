@@ -1,0 +1,19 @@
+@baseUrl = http://localhost:3000
+
+#Products
+
+# @product getAllProducts
+GET {{baseUrl}}/products
+
+###
+# @product remove
+DELETE {{baseUrl}}/products/1
+
+###
+# @product add
+
+POST {{baseUrl}}/products/
+
+###
+# @product update
+PATCH {{baseUrl}}/products/1

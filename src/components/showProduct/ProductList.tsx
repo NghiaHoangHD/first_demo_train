@@ -1,16 +1,17 @@
-import { Button } from '@material-ui/core';
+import { Button } from '@material-ui/core'
 import React from 'react'
-import '../../assets/scss/showProduct.scss';
-import {ProductListType} from '../../pages/home/Home'
-import { Wrapper } from './productList.styles';
+// import '../../assets/scss/showProduct.scss'
+import '../../assets/scss/pages/productList.scss'
+import { ProductListType } from '../../pages/home/Home'
+import { Wrapper } from './productList.styles'
 
 type Props = {
-  item: ProductListType ;
+  item: ProductListType
   handleAddToCart: (clickedItem: ProductListType) => void
 }
-const  ProductList : React.FC<Props> = ({item, handleAddToCart}) => (
-  <Wrapper>
-    <img src = {item.image}></img>
+const ProductList: React.FC<Props> = ({ item, handleAddToCart }) => (
+  <Wrapper className="productList">
+    <img src={item.image}></img>
     <div>
       <h3>{item.name}</h3>
       <p>{item.description}</p>
