@@ -13,6 +13,9 @@ import { useQuery } from 'react-query'
 
 import '../../assets/scss/pages/Login.scss'
 import '../login/login.styles'
+import { authActions, selectIsLogging } from '../../features/auth/authSlice'
+import { useAppDispatch, useAppSelector } from '../../app/hook'
+import { CircularProgress } from '@mui/material'
 
 export type User = {
   id: number
@@ -31,6 +34,16 @@ export default function Login() {
   const { data, isLoading, error } = useQuery<User[]>('user', getUser)
   const [name, setName] = useState('')
   const [password, setPassword] = useState('')
+
+  const dispatch = useAppDispatch()
+  const handleLoginClick = () => {
+    dispatch(
+      authActions.login({
+        username: '',
+        password: '',
+      })
+    )
+  }
 
   return (
     <div className="login ">
@@ -72,6 +85,7 @@ export default function Login() {
                 disableElevation
                 color="primary"
                 fullWidth
+                onClick={handleLoginClick}
               >
                 {' '}
                 Login{' '}

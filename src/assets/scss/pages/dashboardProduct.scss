@@ -51,6 +51,9 @@
     font-size: 16px;
     margin-right: 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .productListBtnEdit:hover {

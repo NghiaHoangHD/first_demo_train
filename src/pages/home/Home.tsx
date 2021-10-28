@@ -16,6 +16,9 @@ import { Wrapper } from '../../components/showProduct/productList.styles'
 import { StyledButton } from '../../App.styles'
 import ProductList from '../../components/showProduct/ProductList'
 import Cart from '../../components/Cart/Cart'
+import { useAppSelector } from '../../app/hook'
+import JsonData from './db.json'
+import ReactPaginate from 'react-paginate'
 
 export type ProductListType = {
   id: number
@@ -29,6 +32,24 @@ export type ProductListType = {
 }
 
 export default function Home() {
+  const [currentPage, setCurrentPage] = useState(1)
+  const [postsPerPage, setPostsPerPage] = useState(10)
+  const [pageNumber, setPageNumber] = useState(0)
+  const [posts, setPosts] = useState([])
+  const { search } = useLocation()
+  const [cartOpen, setCartOpen] = useState(false)
+  let productListApi = 'http://localhost:3000/products'
+
+  const getProducts = async (): Promise<ProductListType[]> =>
+    await (await fetch(productListApi)).json()
+
+  const { data, isLoading, error } = useQuery<ProductListType[]>(
+    'products',
+    getProducts
+  )
+
+  const [cartItems, setCartItems] = useState([] as ProductListType[])
+
   const getTotalItems = (items: ProductListType[]) =>
     items.reduce((ack: number, item) => ack + item.amount, 0)
 
@@ -58,39 +79,25 @@ export default function Home() {
     )
   }
 
-  const [posts, setPosts] = useState([])
-  const { search } = useLocation()
-  const [cartOpen, setCartOpen] = useState(false)
-  const [cartItems, setCartItems] = useState([] as ProductListType[])
-
-  let productListApi = 'http://localhost:3000/products'
-
-  // fetch(productListApi)
-  //   .then(function(response){
-  //     return response.json()
-  //   })
-  //   .then(function(productList) {
-  //     console.log(productList)
-  //   })
-
-  //   useEffect(() => {
-  //     const getPosts = async (): Promise<ProductList[]> => {
-  //       const res = await axios.get("/posts" + search)
-  //       console.log(res.data);
-  //     }
-
-  //     getPosts()
-  // }, [search])
-
-  const getProducts = async (): Promise<ProductListType[]> =>
-    await (await fetch(productListApi)).json()
-
-  const { data, isLoading, error } = useQuery<ProductListType[]>(
-    'products',
-    getProducts
-  )
-
-  console.log('ss', data)
+  const indexOfLastPost = currentPage * postsPerPage
+  const indexOfFirstPost = indexOfLastPost - postsPerPage
+  const currentPost = data
+    ?.slice(indexOfFirstPost, indexOfLastPost)
+    .map(item => {
+      return (
+        <Grid item key={item.id} xs={12} sm={4}>
+          <ProductList
+            item={item}
+            handleAddToCart={handleAddToCart}
+          ></ProductList>
+        </Grid>
+      )
+    })
+  const dataLength = data?.length
+  // const pageCount = Math.ceil(datas?.length / postsPerPage)
+  const changePage = (selected: any) => {
+    setCurrentPage(selected)
+  }
   if (isLoading) return <LinearProgress />
   if (error) {
     return <div> Something went wrong ... </div>
@@ -116,16 +123,33 @@ export default function Home() {
             <AddShoppingCartIcon />
           </Badge>
         </StyledButton>
-        <Button>hello</Button>
+        {/* <Button>hello</Button> */}
+
         <Grid container spacing={3}>
-          {data?.map(item => (
+          {currentPost}
+          {/* <div className="text-center">
+            <ReactPaginate
+              previousLabel={'Previous'}
+              nextLabel={'Next'}
+              pageCount={pageCount}
+              onPageChange={changePage}
+              containerClassName={'paginationBttns'}
+              previousLinkClassName={'previousBttn'}
+              nextLinkClassName={'nextBttn'}
+              disabledClassName={'paginationDisabled'}
+              activeClassName={'paginationActive'}
+              pageRangeDisplayed={3}
+              marginPagesDisplayed={1}
+            />
+          </div> */}
+          {/* {data?.map(item => (
             <Grid item key={item.id} xs={12} sm={4}>
               <ProductList
                 item={item}
                 handleAddToCart={handleAddToCart}
               ></ProductList>
             </Grid>
-          ))}
+          ))} */}
         </Grid>
       </Wrapper>
       {/* <ProductList /> */}

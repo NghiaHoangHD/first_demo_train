@@ -4,8 +4,10 @@ export interface Product {
   image: string
   amount: number
   description: string
-  salePrice: number
+  salePrice: number | string
+  active: boolean
+  stock: number
 
-  createdAt: Date
-  createdUpdate: Date
+  createdAt?: Date
+  createdUpdate?: Date
 }

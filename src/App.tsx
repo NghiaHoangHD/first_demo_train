@@ -11,6 +11,8 @@ import NewProduct from './pages/newProduct/NewProduct'
 import NotFound from './components/notFount/NotFound'
 import DashboardProduct from './pages/dashboardProduct/DashboardProduct'
 import DashboardUser from './pages/dashboardUser/DashboardUser'
+import EditProduct from './pages/editProduct/EditProduct'
+import Profile from './pages/profile/Profile'
 
 const App = () => {
   let productListApi = 'http://localhost:3000/products'
@@ -24,6 +26,10 @@ const App = () => {
 
   const handleAddToCart = (clickedItem: ProductListType) =>
     void console.log('fff', data)
+
+  type Props = {
+    item: ProductListType
+  }
 
   return (
     <Router>
@@ -41,6 +47,10 @@ const App = () => {
               </Grid>
             ))}
           </Grid>
+        </Route>
+
+        <Route exact path="/products/:id">
+          <EditProduct />
         </Route>
 
         <Route exact path="/login">
@@ -61,6 +71,10 @@ const App = () => {
 
         <Route path="/dashboard-user">
           <DashboardUser />
+        </Route>
+
+        <Route path="/profile">
+          <Profile />
         </Route>
 
         <Route path="/">

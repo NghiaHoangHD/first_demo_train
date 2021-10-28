@@ -12,7 +12,7 @@ DELETE {{baseUrl}}/products/1
 ###
 # @product add
 
-POST {{baseUrl}}/products/
+POST {{baseUrl}}/products/posts
 
 ###
 # @product update

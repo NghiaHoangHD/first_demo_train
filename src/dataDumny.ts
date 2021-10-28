@@ -185,91 +185,91 @@ export const userRows = [
 export const productRows = [
   {
     id: 1,
-    productName: 'Iphone 13',
+    productName: 'Jacket',
     stock: 123,
     avatar:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_33Cdf4aRLDW_PsPMcXO_t21Jxw1DtAdPQ&usqp=CAU',
+      'https://oldnavy.gap.com/Asset_Archive/ONWeb/content/0027/312/779/assets/210903_92-M4060_M_DP_NewArrivals.jpg',
     status: 'active',
     transaction: '$120.000',
   },
   {
     id: 2,
-    productName: 'Galaxy Z Flip3 5G',
+    productName: 'T-shirt',
     stock: 123,
     avatar:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_33Cdf4aRLDW_PsPMcXO_t21Jxw1DtAdPQ&usqp=CAU',
+      'https://oldnavy.gap.com/Asset_Archive/ONWeb/content/0027/312/779/assets/210903_92-M4060_M_DP_NewArrivals.jpg',
     status: 'active',
     transaction: '$120.000',
   },
   {
     id: 3,
-    productName: 'Galaxy Z Flip3 5G',
+    productName: 'Shirt',
     stock: 123,
     avatar:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_33Cdf4aRLDW_PsPMcXO_t21Jxw1DtAdPQ&usqp=CAU',
+      'https://oldnavy.gap.com/Asset_Archive/ONWeb/content/0027/312/779/assets/210903_92-M4060_M_DP_NewArrivals.jpg',
     status: 'active',
     transaction: '$150.000',
   },
   {
     id: 4,
-    productName: 'Galaxy Z Flip3 5G',
+    productName: 'Coat',
     stock: 123,
     avatar:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_33Cdf4aRLDW_PsPMcXO_t21Jxw1DtAdPQ&usqp=CAU',
+      'https://oldnavy.gap.com/Asset_Archive/ONWeb/content/0027/312/779/assets/210903_92-M4060_M_DP_NewArrivals.jpg',
     status: 'active',
     transaction: '$150.000',
   },
   {
     id: 5,
-    productName: 'Iphone 13',
+    productName: 'T-shirt',
     stock: 12,
     avatar:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_33Cdf4aRLDW_PsPMcXO_t21Jxw1DtAdPQ&usqp=CAU',
+      'https://oldnavy.gap.com/Asset_Archive/ONWeb/content/0027/312/779/assets/210903_92-M4060_M_DP_NewArrivals.jpg',
     status: 'active',
     transaction: '$130.000',
   },
   {
     id: 6,
-    productName: 'Galaxy Z Flip3 5G',
+    productName: 'jean',
     stock: 13,
     avatar:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_33Cdf4aRLDW_PsPMcXO_t21Jxw1DtAdPQ&usqp=CAU',
+      'https://oldnavy.gap.com/Asset_Archive/ONWeb/content/0027/312/779/assets/210903_92-M4060_M_DP_NewArrivals.jpg',
     status: 'active',
     transaction: '$120.000',
   },
   {
     id: 7,
-    productName: 'Iphone 13',
+    productName: 'shirt',
     stock: 23,
     avatar:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_33Cdf4aRLDW_PsPMcXO_t21Jxw1DtAdPQ&usqp=CAU',
+      'https://oldnavy.gap.com/Asset_Archive/ONWeb/content/0027/312/779/assets/210903_92-M4060_M_DP_NewArrivals.jpg',
     status: 'active',
     transaction: '$120.000',
   },
   {
     id: 8,
-    productName: 'Iphone 13',
+    productName: 'shirt',
     stock: 1221,
     avatar:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_33Cdf4aRLDW_PsPMcXO_t21Jxw1DtAdPQ&usqp=CAU',
+      'https://oldnavy.gap.com/Asset_Archive/ONWeb/content/0027/312/779/assets/210903_92-M4060_M_DP_NewArrivals.jpg',
     status: 'active',
     transaction: '$140.000',
   },
   {
     id: 9,
-    productName: 'Galaxy Z Flip3 5G',
+    productName: 'T-shirt',
     stock: 113,
     avatar:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_33Cdf4aRLDW_PsPMcXO_t21Jxw1DtAdPQ&usqp=CAU',
+      'https://oldnavy.gap.com/Asset_Archive/ONWeb/content/0027/312/779/assets/210903_92-M4060_M_DP_NewArrivals.jpg',
     status: 'active',
     transaction: '$150.000',
   },
   {
     id: 10,
-    productName: 'Iphone 13',
+    productName: 'Jacket',
     stock: 33,
     avatar:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_33Cdf4aRLDW_PsPMcXO_t21Jxw1DtAdPQ&usqp=CAU',
+      'https://oldnavy.gap.com/Asset_Archive/ONWeb/content/0027/312/779/assets/210903_92-M4060_M_DP_NewArrivals.jpg',
     status: 'active',
     transaction: '$110.000',
   },

@@ -9,6 +9,7 @@ import FeaturedInfo from '../featuredInfo/FeatureInfo'
 import WidgetSm from '../widge/widgeSm/WidgetSm'
 import WidgetLg from '../widge/widgetLg/WidgetLg'
 import '../../assets/scss/pages/dashboardProduct.scss'
+import ConfirmDialog from '../../models/ConfirmDialog'
 
 export default function DashboardProduct() {
   const [data, setData] = useState(productRows)
@@ -54,13 +55,14 @@ export default function DashboardProduct() {
       renderCell: (params: any) => {
         return (
           <>
-            <Link to={'/product/' + params.row.id}>
+            <Link to={'/products/' + params.row.id}>
               <button className="productListBtnEdit">Edit</button>
             </Link>
             <DeleteOutline
               className="productListBtnDelete"
               onClick={() => handleDelete(params.row.id)}
             />
+            <ConfirmDialog />
           </>
         )
       },
@@ -71,6 +73,10 @@ export default function DashboardProduct() {
   //   if (!isLoggedIn) {
   //     return <Redirect to="/login"></Redirect>
   //   }
+  const isLoggedIn = Boolean(localStorage.getItem('access_token'))
+  if (!isLoggedIn) {
+    return <Redirect to="/login"></Redirect>
+  }
   return (
     <div className="dashboardProduct">
       <div className="header_dashboard text-center">MANAGE PRODUCTS</div>

@@ -1,17 +1,14 @@
 .newProduct {
   margin-top: 100px;
-  width: 100%;
-}
+  width: 100%; }
 
 .newPost__button {
   cursor: pointer;
-  color: rgb(80, 240, 80)
-}
+  color: #50f050; }
 
 .newPost__img {
   height: 300px;
   border-radius: 10px;
   text-align: center;
   object-fit: contain;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }

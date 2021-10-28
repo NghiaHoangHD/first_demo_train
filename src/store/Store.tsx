@@ -10,7 +10,10 @@ import { applyMiddleware, createStore } from 'redux'
 import Reducer from './reducers/Reducer'
 import rootSaga from './sagas/Sagas'
 import counterReducer from '../features/counter/counterSlice'
-
+import authReducer from '../features/auth/authSlice'
+import { combineReducers } from '@reduxjs/toolkit'
+import { history } from '../ultis/history'
+import { connectRouter, routerMiddleware } from 'connected-react-router'
 const INITiAL_STATE = {
   // user: JSON.parse(localStorage.getItem('user')) || null,
   isFetching: false,
@@ -22,13 +25,16 @@ export const Context = createContext(INITiAL_STATE)
 
 export const sagaMiddleware = createSagaMiddleware()
 
-// export const store = createStore(Reducer, applyMiddleware(sagaMiddleware))
+const rootReducer = combineReducers({
+  router: connectRouter(history),
+  counter: counterReducer,
+  auth: authReducer,
+})
+
 export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+  reducer: rootReducer,
   middleware: getDefaultMiddleware =>
-    getDefaultMiddleware().concat(sagaMiddleware),
+    getDefaultMiddleware().concat(sagaMiddleware, routerMiddleware(history)),
 })
 
 sagaMiddleware.run(rootSaga)

@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import '../../assets/scss/_topbar.scss'
 import { Link } from 'react-router-dom'
 import { Button, Menu, MenuItem, Select } from '@material-ui/core'
+import { useAppDispatch } from '../../app/hook'
+import { authActions } from '../../features/auth/authSlice'
 
 export default function Topbar() {
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -12,6 +14,8 @@ export default function Topbar() {
   const handleClose = () => {
     setAnchorEl(null)
   }
+
+  const dispatch = useAppDispatch()
   return (
     <div className="topbar">
       <div className="topbar__logo">
@@ -84,11 +88,22 @@ export default function Topbar() {
               SIGN UP
             </Link>
           </li>
+
           <li className="topbar__right__item">
-            <img
-              className="topbar__right___item__img"
-              src="https://media.istockphoto.com/photos/happy-smiling-africanamerican-child-girl-yellow-background-picture-id1168369629?k=20&m=1168369629&s=612x612&w=0&h=cOqiMS2ibSZPXOTy6OkRZrGJRUNmIKkv89iVO4TjW3M="
-            ></img>
+            <Button
+              color="primary"
+              onClick={() => dispatch(authActions.logout())}
+            >
+              Log out
+            </Button>
+          </li>
+          <li className="topbar__right__item">
+            <Link to="/profile">
+              <img
+                className="topbar__right___item__img"
+                src="https://media.istockphoto.com/photos/happy-smiling-africanamerican-child-girl-yellow-background-picture-id1168369629?k=20&m=1168369629&s=612x612&w=0&h=cOqiMS2ibSZPXOTy6OkRZrGJRUNmIKkv89iVO4TjW3M="
+              ></img>
+            </Link>
           </li>
         </ul>
       </div>

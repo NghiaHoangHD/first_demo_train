@@ -52,12 +52,12 @@
       "id": 1
     },
     {
-      "name": "vest",
-      "description": "Hello Some quick example text to build on the card title and make up the bulk of the card's content.",
-      "salePrice": "222222",
-      "image": "https://www.irishtimes.com/polopoly_fs/1.4044174.1570550686!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg",
-      "isActive": "yes",
-      "stock": "100",
+      "name": "Jacket man 1",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content. hello ",
+      "salePrice": "90000",
+      "image": "https://i.pinimg.com/564x/84/48/af/8448af80944eaca909874361f6009221.jpg",
+      "isActive": true,
+      "stock": "111",
       "id": 2
     },
     {
@@ -115,11 +115,13 @@
       "id": 8
     },
     {
-      "name": "jacket man22",
-      "description": "ddđ",
-      "salePrice": "43223",
-      "image": "",
-      "id": 10
+      "name": "jacket man 2",
+      "description": "Hello man Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "salePrice": "1222290",
+      "image": "https://www.themodestman.com/wp-content/uploads/2021/07/Noragi-jacket-outfit-650x880.jpg",
+      "isActive": "yes",
+      "stock": "199",
+      "id": 9
     }
   ],
   "profile": {
