@@ -30,6 +30,12 @@ export type ProductListType = {
   createdAt: Date
   createdUpdate: Date
 }
+interface Values {
+  name: string
+  description: string
+  salePrice: string | number
+  image: string
+}
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(1)
@@ -93,8 +99,10 @@ export default function Home() {
         </Grid>
       )
     })
-  const dataLength = data?.length
-  // const pageCount = Math.ceil(datas?.length / postsPerPage)
+  //   const dataLength = data?.length
+  //   const pageCount = Math.ceil(data?.length / postsPerPage)
+  const pageCount = Math.ceil(3)
+
   const changePage = (selected: any) => {
     setCurrentPage(selected)
   }

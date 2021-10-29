@@ -64,6 +64,7 @@
     "@types/react-router-dom": "^5.3.1",
     "@types/redux-saga": "^0.10.5",
     "axios": "^0.23.0",
+    "bootstrap-icons": "^1.6.1",
     "connected-react-router": "^6.9.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",

@@ -1,0 +1,27 @@
+.products {
+  text-align: -webkit-center;
+  display: flex;
+  margin: 100px 224px; }
+  .products__item {
+    margin: 0 20px;
+    text-align: center;
+    justify-content: space-between; }
+
+.productListMenu {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh; }
+  .productListMenu__content {
+    margin-bottom: -100px;
+    align-self: center;
+    flex: 4; }
+  .productListMenu__left {
+    margin-top: 60px;
+    padding-left: 40px;
+    flex: 1; }
+
+.card-body_header {
+  display: flex;
+  justify-content: space-between; }

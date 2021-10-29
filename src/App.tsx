@@ -40,13 +40,14 @@ const App = () => {
           <Home />
         </Route>
         <Route exact path="/products">
-          <Grid container spacing={3}>
+          <Products />
+          {/* <Grid container spacing={3}>
             {data?.map(item => (
               <Grid item key={item.id} xs={12} sm={4}>
                 <Products item={item} handleAddToCart={handleAddToCart} />
               </Grid>
             ))}
-          </Grid>
+          </Grid> */}
         </Route>
 
         <Route exact path="/products/:id">

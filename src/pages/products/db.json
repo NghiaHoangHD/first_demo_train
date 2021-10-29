@@ -1,63 +1,20 @@
-{
-  "user": [
+[
     {
-      "id": 1,
-      "email": "nghiahoang@gmail.com",
-      "username": "nghiahoang",
-      "password": "123456",
-      "createdAt": 12012021,
-      "updatedAt": 12022021
-    },
-    {
-      "id": 2,
-      "email": "hieuHoang@gmail.com",
-      "username": "hieuhoang",
-      "password": "123456",
-      "createdAt": 12012021,
-      "updatedAt": 12022021
-    },
-    {
-      "id": 3,
-      "email": "duchoang@gmail.com",
-      "username": "duchoang",
-      "password": "123456",
-      "createdAt": 12012021,
-      "updatedAt": 12022021
-    },
-    {
-      "id": 4,
-      "email": "huongle@gmail.com",
-      "username": "huongle",
-      "password": "123456",
-      "createdAt": 12012021,
-      "updatedAt": 12022021
-    }
-  ],
-  "categories": [
-    {
-      "id": 1,
-      "name": "ao jacket",
-      "createdAt": 12012021,
-      "updatedAt": 12022021
-    }
-  ],
-  "products": [
-    {
-      "name": "hoodie",
-      "description": "Hello Some quick example text to build on the card title and make up the bulk of the card's content.",
-      "salePrice": "222222",
+      "name": "Jacket man 1",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content. hello ",
+      "salePrice": "90000",
       "image": "https://i.pinimg.com/564x/55/10/26/551026569bf22cc8cf6862c6041f0d79.jpg",
       "isActive": true,
-      "stock": 0,
+      "stock": "111",
       "id": 1
     },
     {
-      "name": "coat",
+      "name": "vest",
       "description": "Hello Some quick example text to build on the card title and make up the bulk of the card's content.",
-      "salePrice": "10000",
+      "salePrice": "222222",
       "image": "https://www.irishtimes.com/polopoly_fs/1.4044174.1570550686!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg",
-      "isActive": true,
-      "stock": 0,
+      "isActive": "yes",
+      "stock": "100",
       "id": 2
     },
     {
@@ -101,8 +58,8 @@
       "description": "Hello Some quick example text to build on the card title and make up the bulk of the card's content.",
       "salePrice": "222222",
       "image": "https://digitalcontent.api.tesco.com/v2/media/homepage/66c4b330-3185-4c7e-a613-561954e343ac/2132-FF-Mens-Portrait-SmallStamp-OrangeTechJacket.jpeg",
-      "isActive": true,
-      "stock": 0,
+      "isActive": "yes",
+      "stock": "100",
       "id": 7
     },
     {
@@ -114,8 +71,4 @@
       "stock": "100",
       "id": 8
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
-}
+  ]
